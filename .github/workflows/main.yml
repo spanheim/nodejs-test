@@ -1,0 +1,25 @@
+name: Nodejs test
+on:
+ push:
+  branches: 
+   - main
+ pull_request:
+   branches: 
+    - main
+jobs:
+ something:
+  runs-on: ubuntu-latest
+  steps:
+    - name: checkout code
+      uses: action/checkout@v3
+    
+    - name: install nodejs and run tests
+      uses: actions/setup-node@v4
+    - uses: actions/setup-node@v4
+      with:
+       node-version: 18
+    - run: npm ci
+    - run: npm test
+    
+      
+    
