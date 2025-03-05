@@ -1,8 +1,9 @@
 {
   "dependencies": {
     "express": "^4.21.2"
+  },
+  "scripts": {
+    "test": "mocha test.js"
   }
-"scripts": {
-  "test": "mocha test.js"
 }
-}
+
